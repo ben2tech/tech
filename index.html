@@ -4,13 +4,34 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ระบบแลกคาบสอน BEN2</title>
-  <script>
-    const target = "https://script.google.com/macros/s/AKfycbzaGsEhqw98j78UPBaoPLtZgQy9iGcVf7fPaTwEq-EOeTU-bY3Nyk0Pqdhj86BAmcdjcA/exec";
-    const chooser = "https://accounts.google.com/AccountChooser?continue=" + encodeURIComponent(target);
-    window.location.replace(chooser);
-  </script>
+  <style>
+    body{font-family:system-ui;margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f6f7fb}
+    .card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:22px;max-width:640px;width:92%;box-shadow:0 8px 24px rgba(0,0,0,.06)}
+    .btn{display:inline-block;margin-top:10px;padding:12px 14px;border-radius:12px;border:1px solid #111;text-decoration:none;color:#111}
+    .muted{color:#6b7280;font-size:14px;line-height:1.5}
+  </style>
 </head>
 <body>
-  กำลังพาไปเลือกบัญชี Google...
+  <div class="card">
+    <h2 style="margin:0 0 6px 0;">ระบบแลกคาบสอน BEN2</h2>
+    <div class="muted">
+      ถ้ามีหลายบัญชี Google ให้เลือกกดลิงก์ตามบัญชีที่ต้องการ (ป้องกันเปิดผิดบัญชี)
+    </div>
+
+    <a class="btn" target="_blank" rel="noopener"
+       href="https://script.google.com/macros/s/AKfycbzaGsEhqw98j78UPBaoPLtZgQy9iGcVf7fPaTwEq-EOeTU-bY3Nyk0Pqdhj86BAmcdjcA/exec?authuser=0">
+      เข้าใช้งาน (บัญชีหลัก /u/0)
+    </a>
+
+    <a class="btn" target="_blank" rel="noopener"
+       href="https://script.google.com/macros/s/AKfycbzaGsEhqw98j78UPBaoPLtZgQy9iGcVf7fPaTwEq-EOeTU-bY3Nyk0Pqdhj86BAmcdjcA/exec?authuser=1">
+      เข้าใช้งาน (บัญชีที่ 2 /u/1)
+    </a>
+
+    <a class="btn" target="_blank" rel="noopener"
+       href="https://accounts.google.com/AccountChooser?continue=https%3A%2F%2Fscript.google.com%2Fmacros%2Fs%2FAKfycbzaGsEhqw98j78UPBaoPLtZgQy9iGcVf7fPaTwEq-EOeTU-bY3Nyk0Pqdhj86BAmcdjcA%2Fexec">
+      เลือกบัญชีก่อนเข้าใช้งาน
+    </a>
+  </div>
 </body>
 </html>
